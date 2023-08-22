@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "868735926360",
+    "project_id": "johortravelrouteplanner",
+    "storage_bucket": "johortravelrouteplanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868735926360:android:6ed97bd202e9bb90898a2d",
+        "android_client_info": {
+          "package_name": "com.ai180183.johortravelrouteplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868735926360-3cg1a5q75j23b05cemqsoj69fui11ce0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW93vjA1Ot2iZadSISqr9PnnKd4564bLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868735926360-3cg1a5q75j23b05cemqsoj69fui11ce0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

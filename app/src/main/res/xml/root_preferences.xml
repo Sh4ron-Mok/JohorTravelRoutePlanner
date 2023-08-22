@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Johor Travel Route Planner">
+
+        <Preference
+            app:title="Disclaimer"
+            app:summary="This mobile app is intended for informational, educational and research purposes only."
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Contact Us">
+
+        <Preference
+            app:title="Email: "
+            app:summary="johortravelrouteplanner@gmail.com"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:title="Developer: "
+            app:summary="Ms Mok Hui Fen"
+            app:useSimpleSummaryProvider="true"/>
+
+        <Preference
+            app:title="Organization: "
+            app:summary="FSKTM UTHM"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

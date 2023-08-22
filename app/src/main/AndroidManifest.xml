@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ai180183.johortravelrouteplanner">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JohorTravelRoutePlanner">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.MapsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_maps"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.PlanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.PlanActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.PlanActivity"
+            android:label="Travel Plan" />
+
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.TravelLogActivity"
+            android:label="Travel Log" />
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.AddTravelLog"
+            android:label="Add New Travel Log"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.TravelLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.TravelLogActivity" />
+        </activity>
+
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.ExploreActivity"
+            android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.CategoryEat"
+            android:label="Where to Eat?"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.ExploreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.ExploreActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.CategoryPlay"
+            android:label="Where to Play?"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.ExploreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.ExploreActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.CategoryStay"
+            android:label="Where to Stay?"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.ExploreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.ExploreActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.AddNewPlace"
+            android:label="Add New Attractive Place"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.ExploreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.ExploreActivity" />
+        </activity>
+
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.AddNewAdmin"
+            android:label="Change User Type"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.AccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.ChangeUsers"
+            android:label="Change User To Admin"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.AccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.ChangeAdmin"
+            android:label="Change Admin To User"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.AccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.SettingsActivity"
+            android:label="Contact Us"
+            android:parentActivityName="com.ai180183.johortravelrouteplanner.AccountActivity"
+            android:theme="@style/Theme.ColorText">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ai180183.johortravelrouteplanner.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.AccountActivity"
+            android:label="Account" />
+
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.LoginActivity"
+            android:theme="@style/Theme.NoActionBar" />
+        <activity
+            android:name="com.ai180183.johortravelrouteplanner.RegisterActivity"
+            android:theme="@style/Theme.NoActionBar" />
+
+        <service
+            android:name=".GetPlaceAutocompleteIntentService"
+            android:exported="false" />
+
+        <provider
+            android:name="SearchHistoryProvider"
+            android:authorities="com.SunDragon.RoutePlanner"
+            android:exported="true" />
+    </application>
+
+</manifest>

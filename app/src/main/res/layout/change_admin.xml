@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/listViewImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Profile Image"
+            android:padding="3dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/listViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/listViewImg"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/pDark" />
+
+        <Button
+            android:id="@+id/upgradeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:background="@drawable/bg_button"
+            android:text="Change"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--My Color Tones-->
+    <color name="colorPrimary">#9DB2B3</color>
+    <color name="colorPrimaryVariant">#6E8283</color>
+    <color name="colorSecondary">#F0EBE5</color>
+    <color name="colorSecondaryVariant">#BDB9B3</color>
+    <color name="colorOnSecondary">#28241E</color>
+    <color name="colorText">#F8F8F8</color>
+
+    <color name="hit_gray">#9db2b3</color>
+    <color name="morandi_purple">#dfd7d7</color>
+    <color name="parchment">#efe5cd</color>
+    <color name="morandi_white">#f0ebe5</color>
+    <color name="green_mist">#cbd6b0</color>
+    <color name="armadillo">#4f463c</color>
+    <color name="flax_smoke">#7e8464</color>
+    <color name="shuttle_gray">#596a74</color>
+    <color name="ferra">#784e56</color>
+    <color name="silk">#c5b2ac</color>
+    <color name="geyser">#d9e5e3</color>
+    <color name="bone">#e3d4c3</color>
+    <color name="mongoose">#b8a584</color>
+    <color name="shadow">#e0e0e0</color>
+    <color name="marker_shadow">#9e9e9e</color>
+
+    <color name="primary">#899e9e</color>
+    <color name="pLight">#b9cfcf</color>
+    <color name="pDark">#5c7070</color>
+    <color name="secondary">#fff0d9</color>
+    <color name="sLight">#ffffff</color>
+    <color name="sDark">#ccbea7</color>
+
+    <color name="marker_purple">#aa00ff</color>
+    <color name="marker_blue">#2962ff</color>
+    <color name="marker_cyan">#00e5ff</color>
+    <color name="marker_teal">#1de9b6</color>
+    <color name="marker_green">#00c853</color>
+    <color name="marker_lime">#aeea00</color>
+    <color name="marker_yellow">#ffd600</color>
+    <color name="marker_amber">#ffab00</color>
+    <color name="marker_orange">#ff6d00</color>
+    <color name="marker_red">#d50000</color>
+</resources>
